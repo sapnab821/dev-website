@@ -1,0 +1,170 @@
+header {
+  background-color: #fafafa;
+  color: #000;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 100;
+  font-size: 22px;
+  line-height: 1.6;
+  clear: both;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  text-align: center;
+}
+
+  body {
+    background-color: #fafafa;
+    color: #000;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  
+  footer {
+    background-color: #fafafa;
+    color: #000;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 1.6;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    text-align: center;
+  }
+  
+  a:hover {
+    text-decoration: none;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: default;
+  }
+  
+  a:visited {
+    color: #0b0080;
+  }
+  
+  a:active {
+    color: #f00;
+  }
+  
+  button {
+    border: none;
+    background-color: #ff7f50;
+    color: white;
+    font-size: 24px;
+    font-family: inherit;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 3px;
+  }
+  
+  button:hover,
+  button:focus {
+    cursor: pointer;
+    opacity: 0.5;
+    -webkit-transition-duration: 1.5s;
+         -o-transition-duration: 1.5s;
+            transition-duration: 1.5s;
+    -webkit-transition-property: opacity;
+    -o-transition-property: opacity;
+    transition-property: opacity;
+  }
+  
+  * {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  
+  .grid {
+    display: -ms-inline-grid;
+    display: inline-grid;
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 10px;
+  }
+  
+  .grid__item {
+    background-color: gray;
+    color: white;
+    text-align: center;
+    min-height: 100px;
+    margin: 10px;
+  }
+  
+  @media all and (max-width: 500px) {
+    .grid {
+      -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+      grid-gap: 10px;
+    }
+  
+    .grid__item: last-child {
+      grid-column: auto / auto;
+      grid-row: auto / auto;
+    }
+  
+    h1 {
+      font-size: 18px;
+    }
+  }
+  
+  @media all and (min-width: 500px) and (max-width: 750px) {
+    .grid {
+      -ms-grid-columns: 1fr 10px 1fr;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 10px;
+    }
+  
+    .grid__item: last-child {
+      grid-column: auto / auto;
+      grid-row: auto / auto;
+    }
+  
+    h1 {
+      font-size: 22px;
+    }
+  } 
+  
+  @-webkit-keyframes bird-move {
+    from {
+      -webkit-transform: translate(0px, 0px);
+              transform: translate(0px, 0px);
+    }
+  
+    to {
+      -webkit-transform: translate(900px, 0px);
+              transform: translate(900px, 0px);
+    }
+  } 
+  
+  @keyframes bird-move {
+    from {
+      -webkit-transform: translate(0px, 0px);
+              transform: translate(0px, 0px);
+    }
+  
+    to {
+      -webkit-transform: translate(900px, 0px);
+              transform: translate(900px, 0px);
+    }
+  }
+  
+  .bird {
+    -webkit-animation-duration: 30s;
+            animation-duration: 30s;
+    -webkit-animation-name: bird-move;
+            animation-name: bird-move;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    -webkit-animation-direction: normal;
+            animation-direction: normal;
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+  }
