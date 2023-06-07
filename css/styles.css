@@ -26,6 +26,7 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.6;
+  text-align: center;
 }
 
 footer {
@@ -71,6 +72,10 @@ button:focus {
   opacity: 0.5;
   transition-duration: 1.5s;
   transition-property: opacity;
+}
+
+img {
+  border-radius: 50%;
 }
 
 * {
@@ -125,11 +130,11 @@ h1 {
 
 @keyframes bird-move {
   from {
-    transform: translate(0px, 170px);
+    transform: translate(-250px, 100px);
   }
 
   to {
-    transform: translate(550px, 170px);
+    transform: translate(150px, 100px);
   }
 }
 
