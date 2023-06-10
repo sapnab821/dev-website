@@ -26,7 +26,10 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.6;
+  flex-direction: column;
   text-align: center;
+  min-height: 100vh;
+  display: flex;
 }
 
 footer {
@@ -36,8 +39,9 @@ footer {
   font-weight: 300;
   font-size: 12px;
   line-height: 1.6;
-  flex-direction: row;
+  flex-direction: column;
   text-align: center;
+  margin-top: auto;
 }
 
 a:hover {
@@ -74,8 +78,37 @@ button:focus {
   transition-property: opacity;
 }
 
-img {
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image {
+  float: left;
+  width: 150px;
+  margin-left: 150px;
+  margin-right: 50px;
+  margin-top: 100px;
+}
+
+.imag {
   border-radius: 50%;
+  border-width: 3px;
+  border-color: #000;
+  border-style: solid;
+  padding: 1px;
+  margin: 5px;
+}
+
+.text {
+  font-size: 20px;
+  padding-left: 20px;
+  margin-top: 100px;
+}
+
+h2 {
+  float: center;
 }
 
 * {
@@ -89,8 +122,12 @@ img {
 }
 
 .grid__item {
-  background-color: gray;
-  color: white;
+  background-color: #fafafa;
+  border-color: #ff7f50;
+  border-radius: 10%;
+  border-width: 5px;
+  border-style: solid;
+  color: #ff7f50;
   text-align: center;
   min-height: 100px;
   margin: 10px;
@@ -124,17 +161,13 @@ h1 {
   }
 }
 
-h1 {
-  font-size: 22px;
-}
-
 @keyframes bird-move {
   from {
-    transform: translate(-250px, 100px);
+    transform: translate(-200px, 170px);
   }
 
   to {
-    transform: translate(150px, 100px);
+    transform: translate(110px, 170px);
   }
 }
 
