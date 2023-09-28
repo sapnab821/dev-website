@@ -117,8 +117,9 @@ h2 {
 
 .grid {
   display: inline-grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  padding: 10px;
+  grid-template-columns: 1fr 1fr;
+  padding-left: 200px;
+  padding-right: 200px;
 }
 
 .grid__item {
