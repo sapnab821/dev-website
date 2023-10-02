@@ -93,8 +93,8 @@ button:focus {
 }
 
 .imag {
-  border-radius: 50%;
-  border-width: 3px;
+  border-radius: 5%;
+  border-width: 1px;
   border-color: #000;
   border-style: solid;
   padding: 1px;
