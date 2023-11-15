@@ -164,11 +164,11 @@ h1 {
 
 @keyframes bird-move {
   from {
-    transform: translate(-200px, 170px);
+    transform: translate(-400px, 170px);
   }
 
   to {
-    transform: translate(110px, 170px);
+    transform: translate(30px, 170px);
   }
 }
 
