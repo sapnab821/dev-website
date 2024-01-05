@@ -162,6 +162,10 @@ h1 {
   }
 }
 
+.meet {
+  border-radius: 20%;
+}
+
 @keyframes bird-move {
   from {
     transform: translate(-400px, 170px);
