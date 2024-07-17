@@ -85,6 +85,7 @@ button:focus {
 
 .container {
   display: flex;
+  line-height: 0%;
   align-items: center;
   justify-content: center;
 }
@@ -105,13 +106,13 @@ button:focus {
   border-width: 1px;
   border-color: #000;
   border-style: solid;
-  padding: 1px;
+  
   margin: 5px;
 }
 
 .text {
   font-size: 20px;
-  padding-left: 20px;
+  padding: 20px;
   margin-top: 100px;
 }
 
@@ -160,6 +161,7 @@ h2 {
 h1 {
   font-size: 28px;
   color: #910448;
+  padding: 20px;
 }
 
 @media all and (min-width: 500px) and (max-width: 750px) {
