@@ -25,15 +25,23 @@ nav{
   height: 8vh;
 }
 
+div .nav{
+  
+  border-width: 10px;
+  border-color: #000;
+}
+
+
 .nav{
   font-size: 20x;
   display: inline-flex;
   padding: 10px 0;
   text-align: center;
   transition: padding 0.3s ease;
-  border-radius: 10px 40px 20px 50px; 
+  border-radius: 10px 40px 20px 50px;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  background-color: #eed9c4;
+  background-color: #e3e2e2;
+  
 }
 
 main a:hover{
@@ -76,7 +84,8 @@ a:visited {
 }
 
 a:hover {
-  
+  transition-duration: 0.75s;
+  transition-property: all;
   font-size: 28px;
   font-weight: bold;
   cursor: default;
@@ -134,6 +143,10 @@ button:focus {
   z-index: 0;
   object-fit: scale-down;
   
+}
+
+.imag img{
+  border-radius: 5%;
 }
 
 
