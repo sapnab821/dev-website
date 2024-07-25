@@ -21,7 +21,7 @@ header {
 
 nav{
   float: right;
-  width: 100vw;
+  width: 98vw;
   height: 8vh;
 }
 
@@ -246,7 +246,7 @@ h1{
 nav{
   margin-top: 20px;
   float: right;
-  width: 100vw;
+  width: 98vw;
   height: 8vh;
 }
 .nav {
@@ -286,7 +286,7 @@ nav{
 
   nav{
     float: right;
-    width: 100vw;
+    width: 98vw;
     height: 8vh;
   }
 
