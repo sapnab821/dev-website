@@ -25,11 +25,6 @@ nav{
   height: 8vh;
 }
 
-div .nav{
-  
-  border-width: 10px;
-  border-color: #000;
-}
 
 
 .nav{
@@ -47,6 +42,8 @@ div .nav{
 main a:hover{
   text-decoration: underline;
 }
+
+
 
 body {
   background-color: var(--background-color);
@@ -73,6 +70,8 @@ footer {
   margin-top: auto;
 }
 
+
+
 a:link{
   color: #000;
   text-decoration: none;
@@ -83,20 +82,25 @@ a:visited {
   color: #000;
 }
 
+
+nav div:hover {
+  border: 3px dotted black;
+}
+
+.div.a:active {
+  border: 2px solid black;
+}
+
 a:hover {
   transition-duration: 0.75s;
   transition-property: all;
-  font-size: 28px;
+  
   font-weight: bold;
   cursor: default;
 }
 
 
 
-a:active {
-  text-decoration: none; 
-  color: #910448;
-}
 
 .info{
   font-size: 30px;
@@ -198,14 +202,16 @@ h2 {
   border-radius: 20%;
 }
 
+
+
 @keyframes bird-move {
   0% {
     top: 0vh;        /* Start at the top edge */
     left: -25vw;       /* Start at the left edge */
   }
   100% {
-    top: calc(90vh - 40vh);     /* Move to the bottom edge */
-    left: calc(90vh - 40vh);    /* Move to the right edge */
+    top: calc(90vh - 60vh);     /* Move to the bottom edge */
+    left: calc(90vh - 60vh);    /* Move to the right edge */
   }
 }
 
@@ -214,7 +220,7 @@ h2 {
 .bird {
   position: relative;
   z-index: 1;
-  animation-duration: 20s;
+  animation-duration: 10s;
   animation-name: bird-move;
   animation-iteration-count: infinite;
   animation-direction: normal;
@@ -257,17 +263,20 @@ h1{
   
 }
 nav{
-  margin-top: 20px;
+  margin-top: 5px;
   float: right;
   width: 98vw;
   height: 8vh;
 }
 .nav {
-  margin-top: 20px;
+  margin-top: 5px;
   font-size: 14px;
   padding: 6px 0; /* Decrease padding for tablets */
 }
 
+nav div:hover {
+  border: 1px dotted black;
+}
 
 
 }
@@ -305,6 +314,10 @@ nav{
 
   .nav {
     font-size: 18px;
-    padding: 8px 0; /* Decrease padding for phones */
+    padding: 5px 0; /* Decrease padding for phones */
   }
+  nav div:hover {
+    border: 2px dotted black;
+  }
+
 }
