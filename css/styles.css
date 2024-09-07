@@ -203,6 +203,13 @@ h2 {
   margin: 10px;
 }
 
+
+.prof-pic2{
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
 .description{
   width: 400px;
   height: auto;
@@ -249,8 +256,33 @@ h1 {
   text-wrap: wrap;
 }
 
+.about p{
+  font-size: 18px;
+}
+
+.about-container{
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.about{
+  width: 700px;
+  height: 300px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin: 5px;
+  margin-top: 20px;
+}
 
 @media all and (max-width: 500px) {
+.about p{
+  font-size: 10px;
+}
+
+
   .grid {
     display: inline-grid;
     padding-left: 10px;
@@ -294,6 +326,10 @@ nav div:hover {
 
 
 @media all and (min-width: 500px) and (max-width: 750px) {
+  .about p{
+    font-size: 14px;
+  }
+
   .grid {
     display: inline-grid;
     padding-left: 10px;
@@ -331,20 +367,4 @@ nav div:hover {
     border: 2px dotted black;
   }
 
-}
-
-.about-container{
-  display: flex;
-  justify-content: center;
-}
-
-.about{
-  width: 700px;
-  height: 300px;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  margin: 5px;
-  margin-top: 20px;
 }
